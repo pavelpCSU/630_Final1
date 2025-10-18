@@ -1,0 +1,24 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.class
+
+# Build directories
+*/build/
+
+# CMake build files
+*/CMakeFiles/
+*/CMakeCache.txt
+*/cmake_install.cmake
+*/*.cmake
+*/Makefile
+
+# Keep solution files local
+Problem1-copilot-Claude-Sonnet-3.5-python/generate_tests.py
+Problem1-copilot-Claude-Sonnet-3.5-python/my_solution.py
+Problem2-copilot-Claude-Sonnet-3.5-python/my_solution.py
+Problem3-copilot-Claude-Sonnet-3.5-python/my_solution.py
+Problem3-copilot-Claude-Sonnet-3.5-C++/my_solution.hpp
+
+# Generated files
+data/*/generated/

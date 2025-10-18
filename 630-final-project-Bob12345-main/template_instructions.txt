@@ -1,0 +1,61 @@
+Here is a definitive, step-by-step order of instructions to produce the output and table as seen in your current script:
+Definitive Instructions for Producing the Output Table
+
+    Implement the Algorithm and Test Harness
+        Write your solution function (e.g., 
+
+    two_sum) in a separate file.
+    Use a test harness script that loads input and expected output from JSON files.
+
+Measure Execution Time
+
+    For each test case, run the solution multiple times (e.g., 10 iterations).
+    Use 
+
+    time.perf_counter_ns() for high-resolution timing.
+    Store all timing results for each iteration.
+
+Use High-Precision Arithmetic
+
+    Use 
+
+        decimal.Decimal for all timing calculations to avoid floating-point errors and ensure maximum precision.
+
+    Convert Timing Units
+        Convert all timing results from seconds to microseconds (μs) for output and analysis.
+        All timing output (per-test and summary table) must be shown in microseconds (μs), not seconds.
+        For each test, print a detailed statistics block in microseconds (μs) immediately after the test runs, including min, max, avg, med, and std.
+
+    Calculate Statistics
+        For each test case, compute:
+            Minimum, maximum, average, median, and standard deviation of execution times (all in μs).
+
+    Build the Complexity Analysis Table
+        For each test case, record:
+            Input size
+            Median, min, max, average, and std of execution time (μs)
+            Median time per input element (μs)
+        For each pair of consecutive test cases, calculate:
+            Actual Ratio: Median time of current test / Median time of previous test
+            Expected Ratio: Input size of current test / Input size of previous test
+
+    Output Table Formatting
+        Print a clear table header, specifying all units (e.g., “Med (μs)”).
+        Add a note explaining that “Expected Ratio” is the ratio of input sizes (unitless), not a timing value.
+        Use clear column headers: “Actual Ratio” and “Expected Ratio”.
+        Ensure the per-test statistics block (min, max, avg, med, std) is printed for every test, not just the last one, and always in microseconds (μs).
+
+    Display Results
+        For each test, print whether it passed or failed.
+        Print the formatted complexity analysis table at the end.
+
+Summary:
+
+    Use high-precision timing and arithmetic.
+    Convert all times to microseconds for readability.
+    Calculate and display both actual and expected ratios.
+    Clearly label all units and add explanatory notes for clarity.
+
+This process ensures your results are accurate, easy to interpret, and ready for graphing or presentation.
+
+Add comment to the solution.py file that includes the args, returns, time complexity and space complexity.

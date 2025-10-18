@@ -1,0 +1,396 @@
+
+=== Problem 1: Two Sum ===
+
+--- Problem1-copilot-GPT-4.1-python (Python) ---
+
+Test 1: Input size = 1,000
+  Result: PASS
+  Min: 224256.52 ns
+  Max: 427232.24 ns
+  Avg: 260074.41 ns
+  Med: 232034.60 ns
+  Std: 61679.09 ns
+  (Each timing sample is averaged over 25 repetitions)
+
+Test 2: Input size = 10,000
+  Result: PASS
+  Min: 2023721.84 ns
+  Max: 2695340.24 ns
+  Avg: 2202479.87 ns
+  Med: 2089505.54 ns
+  Std: 232666.42 ns
+  (Each timing sample is averaged over 25 repetitions)
+
+Test 3: Input size = 100,000
+  Result: PASS
+  Min: 19956955.20 ns
+  Max: 26456423.60 ns
+  Avg: 21788944.45 ns
+  Med: 21475773.98 ns
+  Std: 1969480.10 ns
+  (Each timing sample is averaged over 25 repetitions)
+
+Test 4: Input size = 1,000,000
+  Result: PASS
+  Min: 206748129.48 ns
+  Max: 216404024.28 ns
+  Avg: 211414291.90 ns
+  Med: 211752426.18 ns
+  Std: 3004640.59 ns
+  (Each timing sample is averaged over 25 repetitions)
+
+Complexity Analysis Table (all times in nanoseconds, ns):
+Note: 'Expected Ratio' is the ratio of input sizes between consecutive tests (unitless)
+Each timing sample is averaged over {results[0]['timing']['repeat']} repetitions per test run.
+Big O Analysis (Expected): O(n)
+  Input Size |     Med (ns) |     Min (ns) |     Max (ns) |     Avg (ns) |     Std (ns) |    Time/n (ns) | Actual Ratio |  Expected Ratio |      Big O |     Real. Big O
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+       1,000 |    232034.60 |    224256.52 |    427232.24 |    260074.41 |     61679.09 |     232.034600 |          n/a |             n/a |       O(n) |            O(n)
+      10,000 |   2089505.54 |   2023721.84 |   2695340.24 |   2202479.87 |    232666.42 |     208.950554 |         9.01 |           10.00 |       O(n) |            O(n)
+     100,000 |  21475773.98 |  19956955.20 |  26456423.60 |  21788944.45 |   1969480.10 |     214.757740 |        10.28 |           10.00 |       O(n) |            O(n)
+   1,000,000 | 211752426.18 | 206748129.48 | 216404024.28 | 211414291.90 |   3004640.59 |     211.752426 |         9.86 |           10.00 |       O(n) |            O(n)
+[Empirical Big O Confidence] 0.99
+
+Python version: 3.12.1 (main, Jul 10 2025, 11:57:50) [GCC 13.3.0]
+Platform: linux
+
+--- Problem1-copilot-Claude-Sonnet-3.5-python (Python) ---
+
+Test 1: Input size = 1,000
+  Result: PASS
+  Min: 225031.68 ns
+  Max: 257450.76 ns
+  Avg: 233378.25 ns
+  Med: 229839.54 ns
+  Std: 10007.17 ns
+  (Each timing sample is averaged over 25 repetitions)
+
+Test 2: Input size = 10,000
+  Result: PASS
+  Min: 2042870.48 ns
+  Max: 2768555.40 ns
+  Avg: 2138111.12 ns
+  Med: 2056797.24 ns
+  Std: 223365.39 ns
+  (Each timing sample is averaged over 25 repetitions)
+
+Test 3: Input size = 100,000
+  Result: PASS
+  Min: 19924536.08 ns
+  Max: 24285767.76 ns
+  Avg: 21680884.67 ns
+  Med: 21387977.74 ns
+  Std: 1495615.13 ns
+  (Each timing sample is averaged over 25 repetitions)
+
+Test 4: Input size = 1,000,000
+  Result: PASS
+  Min: 207633213.32 ns
+  Max: 215597911.60 ns
+  Avg: 212300806.61 ns
+  Med: 213507455.20 ns
+  Std: 3174485.65 ns
+  (Each timing sample is averaged over 25 repetitions)
+
+Complexity Analysis Table (all times in nanoseconds, ns):
+Note: 'Expected Ratio' is the ratio of input sizes between consecutive tests (unitless)
+Each timing sample is averaged over {results[0]['timing']['repeat']} repetitions per test run.
+Big O Analysis (Expected): O(n)
+  Input Size |     Med (ns) |     Min (ns) |     Max (ns) |     Avg (ns) |     Std (ns) |    Time/n (ns) | Actual Ratio |  Expected Ratio |      Big O |     Real. Big O
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+       1,000 |    229839.54 |    225031.68 |    257450.76 |    233378.25 |     10007.17 |     229.839540 |          n/a |             n/a |       O(n) |            O(n)
+      10,000 |   2056797.24 |   2042870.48 |   2768555.40 |   2138111.12 |    223365.39 |     205.679724 |         8.95 |           10.00 |       O(n) |            O(n)
+     100,000 |  21387977.74 |  19924536.08 |  24285767.76 |  21680884.67 |   1495615.13 |     213.879777 |        10.40 |           10.00 |       O(n) |            O(n)
+   1,000,000 | 213507455.20 | 207633213.32 | 215597911.60 | 212300806.61 |   3174485.65 |     213.507455 |         9.98 |           10.00 |       O(n) |            O(n)
+[Empirical Big O Confidence] 1.00
+
+Python version: 3.12.1 (main, Jul 10 2025, 11:57:50) [GCC 13.3.0]
+Platform: linux
+
+=== Problem 2: Group Anagrams ===
+
+--- Problem2-copilot-GPT-4.1-python (Python) ---
+
+Test 1: Input size = 30
+  Result: PASS
+  Min: 36379.80 ns
+  Max: 56642.16 ns
+  Avg: 42373.01 ns
+  Med: 38561.00 ns
+  Std: 7754.32 ns
+  (Each timing sample is averaged over 25 repetitions)
+
+Test 2: Input size = 300
+  Result: PASS
+  Min: 237692.32 ns
+  Max: 385376.16 ns
+  Avg: 257241.33 ns
+  Med: 239634.54 ns
+  Std: 45787.78 ns
+  (Each timing sample is averaged over 25 repetitions)
+
+Test 3: Input size = 3,000
+  Result: PASS
+  Min: 2230319.68 ns
+  Max: 3960334.08 ns
+  Avg: 2488301.08 ns
+  Med: 2251781.86 ns
+  Std: 548748.33 ns
+  (Each timing sample is averaged over 25 repetitions)
+
+Complexity Analysis Table (all times in nanoseconds, ns):
+Note: 'Expected Ratio' is the ratio of input sizes between consecutive tests (unitless)
+Each timing sample is averaged over {results[0]['timing']['repeat']} repetitions per test run.
+Big O Analysis (Expected): O(nk)
+  Input Size |     Med (ns) |     Min (ns) |     Max (ns) |     Avg (ns) |     Std (ns) |    Time/n (ns) | Actual Ratio |  Expected Ratio |      Big O |     Real. Big O
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+          30 |     38561.00 |     36379.80 |     56642.16 |     42373.01 |      7754.32 |    1285.366667 |          n/a |             n/a |      O(nk) |            O(n)
+         300 |    239634.54 |    237692.32 |    385376.16 |    257241.33 |     45787.78 |     798.781800 |         6.21 |           10.00 |      O(nk) |            O(n)
+       3,000 |   2251781.86 |   2230319.68 |   3960334.08 |   2488301.08 |    548748.33 |     750.593953 |         9.40 |           10.00 |      O(nk) |            O(n)
+
+[Big O Discrepancy Analysis]
+Discrepancy detected: Theoretical Big O is O(nk), but empirical result is O(n).
+Possible reasons: Input sizes may be too small to reveal true asymptotic behavior.
+
+[Empirical Big O Confidence] 1.00
+
+[Big O Discrepancy Analysis]
+Discrepancy detected: Theoretical Big O is O(nk), but empirical result is O(n).
+Possible reasons: Input sizes may be too small to reveal true asymptotic behavior.
+
+
+Python version: 3.12.1 (main, Jul 10 2025, 11:57:50) [GCC 13.3.0]
+Platform: linux
+
+--- Problem2-copilot-Claude-Sonnet-3.5-python (Python) ---
+
+Test 1: Input size = 30
+  Result: PASS
+  Min: 33886.04 ns
+  Max: 35636.80 ns
+  Avg: 34564.04 ns
+  Med: 34434.96 ns
+  Std: 600.18 ns
+  (Each timing sample is averaged over 25 repetitions)
+
+Test 2: Input size = 300
+  Result: PASS
+  Min: 234308.84 ns
+  Max: 364828.48 ns
+  Avg: 254901.78 ns
+  Med: 236337.10 ns
+  Std: 43169.59 ns
+  (Each timing sample is averaged over 25 repetitions)
+
+Test 3: Input size = 3,000
+  Result: PASS
+  Min: 2226390.76 ns
+  Max: 2901943.60 ns
+  Avg: 2352640.18 ns
+  Med: 2239139.08 ns
+  Std: 222066.82 ns
+  (Each timing sample is averaged over 25 repetitions)
+
+Complexity Analysis Table (all times in nanoseconds, ns):
+Note: 'Expected Ratio' is the ratio of input sizes between consecutive tests (unitless)
+Each timing sample is averaged over {results[0]['timing']['repeat']} repetitions per test run.
+Big O Analysis (Expected): O(nk)
+  Input Size |     Med (ns) |     Min (ns) |     Max (ns) |     Avg (ns) |     Std (ns) |    Time/n (ns) | Actual Ratio |  Expected Ratio |      Big O |     Real. Big O
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+          30 |     34434.96 |     33886.04 |     35636.80 |     34564.04 |       600.18 |    1147.832002 |          n/a |             n/a |      O(nk) |            O(n)
+         300 |    236337.10 |    234308.84 |    364828.48 |    254901.78 |     43169.59 |     787.790334 |         6.86 |           10.00 |      O(nk) |            O(n)
+       3,000 |   2239139.08 |   2226390.76 |   2901943.60 |   2352640.18 |    222066.82 |     746.379693 |         9.47 |           10.00 |      O(nk) |            O(n)
+
+[Big O Discrepancy Analysis]
+Discrepancy detected: Theoretical Big O is O(nk), but empirical result is O(n).
+Possible reasons: Input sizes may be too small to reveal true asymptotic behavior.
+
+[Empirical Big O Confidence] 1.00
+
+[Big O Discrepancy Analysis]
+Discrepancy detected: Theoretical Big O is O(nk), but empirical result is O(n).
+Possible reasons: Input sizes may be too small to reveal true asymptotic behavior.
+
+
+Python version: 3.12.1 (main, Jul 10 2025, 11:57:50) [GCC 13.3.0]
+Platform: linux
+
+=== Problem 3: Median of Two Sorted Arrays ===
+
+--- Problem3-copilot-GPT-4.1-python (Python) ---
+
+Test 1: Input size = 50
+  Result: PASS
+  Min: 29255.84 ns
+  Max: 58290.12 ns
+  Avg: 34414.80 ns
+  Med: 30563.24 ns
+  Std: 8793.47 ns
+  (Each timing sample is averaged over 25 repetitions)
+
+Test 2: Input size = 500
+  Result: PASS
+  Min: 209379.60 ns
+  Max: 394828.16 ns
+  Avg: 248741.99 ns
+  Med: 217838.62 ns
+  Std: 66356.12 ns
+  (Each timing sample is averaged over 25 repetitions)
+
+Test 3: Input size = 5,000
+  Result: PASS
+  Min: 1989908.60 ns
+  Max: 2319040.20 ns
+  Avg: 2052214.75 ns
+  Med: 2015477.74 ns
+  Std: 97522.49 ns
+  (Each timing sample is averaged over 25 repetitions)
+
+Complexity Analysis Table (all times in nanoseconds, ns):
+Note: 'Expected Ratio' is the ratio of input sizes between consecutive tests (unitless)
+Each timing sample is averaged over {results[0]['timing']['repeat']} repetitions per test run.
+Big O Analysis (Expected): O(log(min(n, m)))
+  Input Size |     Med (ns) |     Min (ns) |     Max (ns) |     Avg (ns) |     Std (ns) |    Time/n (ns) | Actual Ratio |  Expected Ratio |      Big O |     Real. Big O
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+          50 |     30563.24 |     29255.84 |     58290.12 |     34414.80 |      8793.47 |     611.264799 |          n/a |             n/a | O(log(min(n, m))) |            O(n)
+         500 |    217838.62 |    209379.60 |    394828.16 |    248741.99 |     66356.12 |     435.677240 |         7.13 |           10.00 | O(log(min(n, m))) |            O(n)
+       5,000 |   2015477.74 |   1989908.60 |   2319040.20 |   2052214.75 |     97522.49 |     403.095548 |         9.25 |           10.00 | O(log(min(n, m))) |            O(n)
+
+[Big O Discrepancy Analysis]
+Discrepancy detected: Theoretical Big O is O(log(min(n, m))), but empirical result is O(n).
+Possible reasons: Input sizes may be too small to reveal true asymptotic behavior.
+
+[Empirical Big O Confidence] 0.98
+
+[Big O Discrepancy Analysis]
+Discrepancy detected: Theoretical Big O is O(log(min(n, m))), but empirical result is O(n).
+Possible reasons: Input sizes may be too small to reveal true asymptotic behavior.
+
+
+Python version: 3.12.1 (main, Jul 10 2025, 11:57:50) [GCC 13.3.0]
+Platform: linux
+
+--- Problem3-copilot-Claude-Sonnet-3.5-python (Python) ---
+
+Test 1: Input size = 50
+  Result: PASS
+  Min: 30034.76 ns
+  Max: 54322.60 ns
+  Avg: 38812.70 ns
+  Med: 34085.86 ns
+  Std: 9864.85 ns
+  (Each timing sample is averaged over 25 repetitions)
+
+Test 2: Input size = 500
+  Result: PASS
+  Min: 211779.04 ns
+  Max: 225604.32 ns
+  Avg: 216237.40 ns
+  Med: 214885.26 ns
+  Std: 4575.46 ns
+  (Each timing sample is averaged over 25 repetitions)
+
+Test 3: Input size = 5,000
+  Result: PASS
+  Min: 1990925.84 ns
+  Max: 2095608.76 ns
+  Avg: 2023397.09 ns
+  Med: 2016033.08 ns
+  Std: 29243.62 ns
+  (Each timing sample is averaged over 25 repetitions)
+
+Complexity Analysis Table (all times in nanoseconds, ns):
+Note: 'Expected Ratio' is the ratio of input sizes between consecutive tests (unitless)
+Each timing sample is averaged over {results[0]['timing']['repeat']} repetitions per test run.
+Big O Analysis (Expected): O(log(min(n, m)))
+  Input Size |     Med (ns) |     Min (ns) |     Max (ns) |     Avg (ns) |     Std (ns) |    Time/n (ns) | Actual Ratio |  Expected Ratio |      Big O |     Real. Big O
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+          50 |     34085.86 |     30034.76 |     54322.60 |     38812.70 |      9864.85 |     681.717202 |          n/a |             n/a | O(log(min(n, m))) |            O(n)
+         500 |    214885.26 |    211779.04 |    225604.32 |    216237.40 |      4575.46 |     429.770520 |         6.30 |           10.00 | O(log(min(n, m))) |            O(n)
+       5,000 |   2016033.08 |   1990925.84 |   2095608.76 |   2023397.09 |     29243.62 |     403.206616 |         9.38 |           10.00 | O(log(min(n, m))) |            O(n)
+
+[Big O Discrepancy Analysis]
+Discrepancy detected: Theoretical Big O is O(log(min(n, m))), but empirical result is O(n).
+Possible reasons: Input sizes may be too small to reveal true asymptotic behavior.
+
+[Empirical Big O Confidence] 1.00
+
+[Big O Discrepancy Analysis]
+Discrepancy detected: Theoretical Big O is O(log(min(n, m))), but empirical result is O(n).
+Possible reasons: Input sizes may be too small to reveal true asymptotic behavior.
+
+
+Python version: 3.12.1 (main, Jul 10 2025, 11:57:50) [GCC 13.3.0]
+Platform: linux
+
+--- Problem3-copilot-GPT-4.1-C++ (C++) ---
+Running C++ tests for Problem3-copilot-GPT-4.1-C++...
+
+Complexity Analysis Table (all times in nanoseconds, ns):
+Note: 'Expected Ratio' is the ratio of input sizes between consecutive tests (unitless)
+Big O Analysis (Expected): O(log(min(n, m)))
+  Input Size |     Med (ns) |     Min (ns) |     Max (ns) |     Avg (ns) |     Std (ns) |    Time/n (ns) | Actual Ratio |  Expected Ratio |      Big O |     Real. Big O
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+         100 |        79.32 |        76.77 |       102.11 |        84.10 |         8.76 |       0.793200 |          n/a |             n/a | O(log(min(n, m))) |        O(log n)
+       1,000 |        95.37 |        95.08 |       100.18 |        96.62 |         1.94 |       0.095370 |         1.20 |           10.00 | O(log(min(n, m))) |        O(log n)
+      10,000 |       129.41 |       124.05 |       215.36 |       143.88 |        27.54 |       0.012941 |         1.36 |           10.00 | O(log(min(n, m))) |        O(log n)
+     100,000 |       135.78 |       135.24 |       159.44 |       138.44 |         7.09 |       0.001358 |         1.05 |           10.00 | O(log(min(n, m))) |        O(log n)
+     200,000 |       139.46 |       136.54 |       158.31 |       143.61 |         8.38 |       0.000697 |         1.03 |            2.00 | O(log(min(n, m))) |        O(log n)
+     400,000 |       181.43 |       173.25 |       200.55 |       182.99 |         8.83 |       0.000454 |         1.30 |            2.00 | O(log(min(n, m))) |        O(log n)
+     800,000 |       136.17 |       135.71 |       185.19 |       143.30 |        14.95 |       0.000170 |         0.75 |            2.00 | O(log(min(n, m))) |        O(log n)
+   1,600,000 |       167.41 |       163.78 |       192.40 |       173.27 |        10.31 |       0.000105 |         1.23 |            2.00 | O(log(min(n, m))) |        O(log n)
+
+[Big O Discrepancy Analysis]
+Discrepancy detected: Theoretical Big O is O(log(min(n, m))), but empirical result is O(log n).
+Possible reasons: Possible causes include small input sizes, constant factors, implementation optimizations, or measurement noise.
+
+[Empirical Big O Confidence] 0.70
+
+[Big O Discrepancy Analysis]
+Discrepancy detected: Theoretical Big O is O(log(min(n, m))), but empirical result is O(log n).
+Possible reasons: Possible causes include small input sizes, constant factors, implementation optimizations, or measurement noise.
+
+Test 1: PASS
+Test 2: PASS
+Test 3: PASS
+Test 4: PASS
+Test 5: PASS
+Test 6: PASS
+Test 7: PASS
+Test 8: PASS
+
+--- Problem3-copilot-Claude-Sonnet-3.5-C++ (C++) ---
+Running C++ tests for Problem3-copilot-Claude-Sonnet-3.5-C++...
+
+Complexity Analysis Table (all times in nanoseconds, ns):
+Note: 'Expected Ratio' is the ratio of input sizes between consecutive tests (unitless)
+Big O Analysis (Expected): O(log(min(n, m)))
+  Input Size |     Med (ns) |     Min (ns) |     Max (ns) |     Avg (ns) |     Std (ns) |    Time/n (ns) | Actual Ratio |  Expected Ratio |      Big O |     Real. Big O
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+         100 |        78.43 |        75.88 |        97.69 |        80.99 |         6.79 |       0.784300 |          n/a |             n/a | O(log(min(n, m))) |        O(log n)
+       1,000 |       123.96 |       119.80 |       140.41 |       126.67 |         6.90 |       0.123960 |         1.58 |           10.00 | O(log(min(n, m))) |        O(log n)
+      10,000 |       141.85 |       137.44 |       166.11 |       143.81 |         8.10 |       0.014185 |         1.14 |           10.00 | O(log(min(n, m))) |        O(log n)
+     100,000 |       201.56 |       197.32 |       235.85 |       209.14 |        14.66 |       0.002016 |         1.42 |           10.00 | O(log(min(n, m))) |        O(log n)
+     200,000 |       211.95 |       193.18 |       253.02 |       212.98 |        17.31 |       0.001060 |         1.05 |            2.00 | O(log(min(n, m))) |        O(log n)
+     400,000 |       214.75 |       206.78 |       247.79 |       219.04 |        12.08 |       0.000537 |         1.01 |            2.00 | O(log(min(n, m))) |        O(log n)
+     800,000 |       181.92 |       172.54 |       193.18 |       181.37 |         6.46 |       0.000227 |         0.85 |            2.00 | O(log(min(n, m))) |        O(log n)
+   1,600,000 |       206.88 |       202.13 |       227.96 |       211.93 |         9.45 |       0.000129 |         1.14 |            2.00 | O(log(min(n, m))) |        O(log n)
+
+[Big O Discrepancy Analysis]
+Discrepancy detected: Theoretical Big O is O(log(min(n, m))), but empirical result is O(log n).
+Possible reasons: Possible causes include small input sizes, constant factors, implementation optimizations, or measurement noise.
+
+[Empirical Big O Confidence] 0.84
+
+[Big O Discrepancy Analysis]
+Discrepancy detected: Theoretical Big O is O(log(min(n, m))), but empirical result is O(log n).
+Possible reasons: Possible causes include small input sizes, constant factors, implementation optimizations, or measurement noise.
+
+Test 1: PASS
+Test 2: PASS
+Test 3: PASS
+Test 4: PASS
+Test 5: PASS
+Test 6: PASS
+Test 7: PASS
+Test 8: PASS
